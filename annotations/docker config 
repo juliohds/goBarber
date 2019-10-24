@@ -1,0 +1,14 @@
+
+apos baixar e instalar o docker rode:
+docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+
+baixar alguma ferramenta de interface para o postgres
+
+e criar uma tabela 
+
+//comando apra deixar container rodando para sempre 
+docker start database 
+
+para ver error no seu docker 
+docker logs 
+

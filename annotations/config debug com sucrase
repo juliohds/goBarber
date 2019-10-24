@@ -1,0 +1,15 @@
+
+
+cria um script 
+"dev:debug": "nodemon --inspect src/server.js"
+
+cria uma nova configuracao de debug
+troque para attach
+
+ {
+    "type": "node",
+    "request": "attach",
+    "name": "Launch Program",
+    "restart": true,
+    "protocol": "inspector"
+}

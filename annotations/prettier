@@ -1,0 +1,26 @@
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+adicione em rules
+
+"prettier/prettier": "error",
+
+em extends
+
+'prettier'
+
+adicione 
+
+plugins: ['prettier'],
+
+crie o arquivo 
+
+.prettierrc
+
+e coloque 
+
+{
+    "singleQuote": true,
+    "trailingComma": "es5"
+}
+
+para sobrescrever o lint do prettier

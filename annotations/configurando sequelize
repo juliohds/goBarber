@@ -1,0 +1,43 @@
+yarn add sequelize
+
+yarn add sequelize-cli
+
+
+crie sequelizerc
+crie o arquivo .sequelizerc
+yarn add sequelize sequelize-cli
+
+instale as dependencias do seus banco de dados
+yarn add pg pg-hstore
+
+crie o arquivo database.js
+
+e coloque as credenciais
+
+module.exports = {
+    dialect: 'postgres',
+    host: 'localhost',
+    username: 'postgres',
+    password: 'docker',
+    database: 'gobarber',
+    define: {
+        timestamps: true,
+        underscored: true,
+        underscoredAll: true,
+    },
+};
+
+
+crie o arquivo .sequelizerc
+
+e configure as pastas para o framework
+
+const  { resolve } = require ('path');
+
+module.exports = {
+    config: resolve(__dirname, 'src', 'config', 'database.js'),
+    'models-path': resolve(__dirname, 'src', 'app', 'models'),
+    'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'),
+    'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'),
+}
+

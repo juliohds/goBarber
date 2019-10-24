@@ -1,0 +1,47 @@
+yarn add eslint -D 
+
+yarn eslint --init 
+
+reponda as perguntas
+
+remova o package.lock e rode yarn
+
+instale a extensao do eslint 
+
+configure no seu vscode
+
+"eslint.autoFixOnSave": true,
+    "eslint.validate":[
+    {
+        "language": "javascript",
+        "autoFix": true
+    },
+    {
+        "language": "javascriptreact",
+        "autoFix": true
+    },
+    {
+        "language": "typescript",
+        "autoFix": true
+    },
+    {
+        "language": "typescriptreact",
+        "autoFix": true
+    }
+    ]
+
+no .eslintrc
+
+altere as rules
+
+  rules: {
+    "class-methods-use-this": "off",
+    "no-param-reassign":"off",
+    "camelcase": "off",
+    "no-unused-vars": ["error", { "argsIgnorePatter": "next" }]
+  },
+
+
+  rodando o lint em tudo
+
+  yarn eslint --fix src --ext .js
